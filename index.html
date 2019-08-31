@@ -1,9 +1,30 @@
 <html>
 <body>
-    <h1>Считаем кроликов</h1>
+<form onsubmit="test();">
+Вокруг чего объеденено это сообщество?<br>
+<input type="radio" id="1" name="a" value = "x" checked>Вокруг проекта по возрождению рыцарской культуры<br>
+<input type="radio" id="2" name="a" value = "y" checked>Вокруг проекта по зарождению дополненной реальности<br>
+<input type="radio" id="3" name="a" value = "z" checked>Вокруг купли-продажи земельных участков<br><br>
+Основной продукт проекта?<br>
+<input type="radio" id="4" name="b" value = "x" checked>Space<br>
+<input type="radio" id="5" name="b" value = "y" checked>SPH<br>
+<input type="radio" id="6" name="b" value = "z" checked>Spheroid<br><br>
+Что сейчас можно заработать в проекте?
+<br>
+<input type="radio" id="7" name="c" value = "x" checked>SPH<br>
+<input type="radio" id="8" name="c" value = "y" checked>Spheroid<br>
+<input type="radio" id="9" name="c" value = "z" checked>Space<br>
+<br>
+<input type="submit" value="Отправить">
+</form>
+<div id="r"></div>
 <script type="text/javascript">
-	alert(document.cookie);
+function test() {
+	if (document.getElementById('2').checked && document.getElementById('4').checked && document.getElementById('9').checked) {
+	document.getElementById('r') = 'fdfd';
+	alert('скопируйте: jqpfng895');
+	
+}}
 </script>
-
 </body>
 </html>
